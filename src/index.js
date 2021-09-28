@@ -3,6 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import SeasonDisplay from "./SeasonDisplay";
 import "semantic-ui-css/semantic.min.css";
+import Spinner from "./Spinner";
 
 class App extends React.Component {
   // called anytime a new instance of the app is created (Native JS)
@@ -33,7 +34,7 @@ class App extends React.Component {
       return <SeasonDisplay lat={this.state.lat} />;
     }
 
-    return <div>Loading...</div>;
+    return <Spinner />;
   }
 }
 
