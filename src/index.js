@@ -2,6 +2,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import SeasonDisplay from "./SeasonDisplay";
+import "semantic-ui-css/semantic.min.css";
 
 class App extends React.Component {
   // called anytime a new instance of the app is created (Native JS)
